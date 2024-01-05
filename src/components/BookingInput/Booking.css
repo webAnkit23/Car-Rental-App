@@ -9,7 +9,7 @@
 }
 .inside_items{
   height: auto;
-    background-image: url('C:\Users\wwwan\OneDrive\Desktop\Car rental project\CAR RENT APP\src\components\BookingInput\imagesBookingSection\bookingbackground.png');
+    background-image: url('src/components/BookingInput/imagesBookingSection/bookingbackground.png');
     padding: 2rem;
     position: relative;
     width: 100%;
