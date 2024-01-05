@@ -4,9 +4,15 @@ import './ContactBox.css'
 import { FiPhoneCall } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";
 import { IoPaperPlaneOutline } from "react-icons/io5";
+import bgcontact from './contactimages/bgcontact.png'
 export default function ContactBox() {
+  const contactStyle ={
+    backgroundImage : `url(${bgcontact})`,
+    backgroundPositionY: 'center',
+    padding: '3rem'
+  }
   return (
-    <div className="contact_container">
+    <div className="contact_container" style={contactStyle}>
         <div className="contact_div">
             <div className="contact_text_box">
                 <h1>Need additional <br />information?</h1>

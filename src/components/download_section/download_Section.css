@@ -1,13 +1,4 @@
-.download_section{
-    background-color: #f8f8f8;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    padding: 5rem 0rem;
-    width: 100%;
-    background-image: url('C:\Users\wwwan\OneDrive\Desktop\Car rental project\CAR RENT APP\src\components\download_section\download_images\bg.png');
-}
+
 .download_text_area{
     width: 600px;
 }

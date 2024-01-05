@@ -4,7 +4,7 @@ import { useState} from 'react';
 import { FaBars } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 import { Link ,Outlet} from 'react-router-dom';
-
+import lofo from './imagesNavSection/NavbarLogo.png'
 
 
 function Navbar() {
@@ -18,7 +18,7 @@ function Navbar() {
     <>
     <nav className={`containter` }>
         <div className={`nav_iconContainter  ${isActive==='show_nav' ? 'hide_Icon':''}`}>
-        <Link to='/'> <img className='NavIcon' src="src\components\Navbar\imagesNavSection\NavbarLogo.png" alt='car rent'/></Link>
+        <Link to='/'> <img className='NavIcon' src={lofo} alt='car rent'/></Link>
         </div>
 
         <ul  className={`nav_ul ${isActive}`}>

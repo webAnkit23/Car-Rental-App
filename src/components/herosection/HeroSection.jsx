@@ -3,6 +3,7 @@ import './heroSection.css'
 import { FaChevronCircleRight } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 import background from './imagesHeroSection/HeroBackgroud.png'
+import heroCar from './imagesHeroSection/HeroCar.png'
 export default function HeroSection() 
 {
   return (
@@ -19,7 +20,7 @@ export default function HeroSection()
                 <button className='hero_button hero_button_black'><a>Learn more   <FaChevronCircleRight /></a></button>
                </div> 
            </div>
-            <img className ='hero_car_image'  src='src\components\herosection\imagesHeroSection\HeroCar.png'></img>
+            <img className ='hero_car_image'  src={heroCar}></img>
         </div>
        </div>
     </div>

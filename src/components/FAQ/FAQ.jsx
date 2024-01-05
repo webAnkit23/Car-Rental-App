@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './FAQ.css'
 import { IoIosArrowDropdown } from "react-icons/io";
 import { IoIosArrowDropup } from "react-icons/io";
+import faqcar from './FAQimages/faq_car.png'
 export default function FAQ() {
   let [selected,setselected] = useState(null);
 
@@ -27,7 +28,7 @@ export default function FAQ() {
           answer:'Book in advance: Booking your rental car ahead of time can often result in lower prices. Compare prices from multiple companies: Use websites like Kayak, Expedia, or Travelocity to compare prices from multiple rental car companies. Look for discount codes and coupons: Search for discount codes and coupons that you can use to lower the rental price. Renting from an off-airport location can sometimes result in lower prices.'
        }];
   return (
-    <div className="faq_section">
+    <div className="faq_section" style={{backgroundImage : `url(${faqcar})`}}>
         <div className="faq_container">
             <div className="faq_contents">
                 <div className="faq_headings">

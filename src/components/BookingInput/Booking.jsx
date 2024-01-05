@@ -8,6 +8,7 @@ import { TbCalendarEvent, TbRubberStamp } from "react-icons/tb";
 import { useState } from "react";
 import Reservation from "../Reservation/Reservation";
 import car_data from "../../datas/Car_data";
+import bookingbg from './imagesBookingSection/bookingbackground.png'
 
 export default function Booking({sectionRef}) {
   const data ={
@@ -55,7 +56,7 @@ export default function Booking({sectionRef}) {
     <>
     <div className="booking_container" ref={sectionRef}>
       <div className="booking_wrapper">
-        <div className="inside_items">
+        <div className="inside_items" style={{backgroundImage : `url(${bookingbg})`}}>
           <h4>Book a Car</h4>
           {showmessege &&  <div className={`messege ${reservesuccess===true ? 'green' : 'red'}`}>
                {reservesuccess ? 'Check your Email !' : 'all inputs are required'} <RxCross2 onClick={() => setshowmessege(false)}/>

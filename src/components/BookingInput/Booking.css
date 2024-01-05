@@ -9,7 +9,6 @@
 }
 .inside_items{
   height: auto;
-    background-image: url('src/components/BookingInput/imagesBookingSection/bookingbackground.png');
     padding: 2rem;
     position: relative;
     width: 100%;
