@@ -1,5 +1,8 @@
 import React from 'react'
 import './Testimonials.css'
+
+import harry from './clientsTestimonialsImages/harrypotter.jpg'
+import ron from './clientsTestimonialsImages/ron.jpg'
 function TestimonialSection() {
   return (
     <section className='testimonials_section'>
@@ -15,7 +18,7 @@ function TestimonialSection() {
                         <h4>"We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable. "</h4>
                          <div className="client_info">
                             <div className="img_container">
-                            <img src='src\components\TestimonialsSection\clientsTestimonialsImages\harrypotter.jpg'></img>
+                            <img src={harry}></img>
                             </div>
                             <p>Ankit Singh<br />Belgrade</p>
                             <span>99</span>
@@ -25,7 +28,7 @@ function TestimonialSection() {
                         <h4>"The car was in great condition and made our trip even better. Highly recommend for this car rental website!"</h4>
                         <div className="client_info">
                             <div className="img_container">
-                         <img src='src\components\TestimonialsSection\clientsTestimonialsImages\ron.jpg'></img> 
+                         <img src={ron}></img> 
                          </div>
                             <p>Altamash Alam<br />Gorakhpur</p>
                             <span>99</span>
