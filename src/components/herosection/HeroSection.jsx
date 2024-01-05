@@ -2,13 +2,13 @@ import React from 'react'
 import './heroSection.css'
 import { FaChevronCircleRight } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
-
+import background from './imagesHeroSection/HeroBackgroud.png'
 export default function HeroSection() 
 {
   return (
     <div className='hero2_container'>
        <div className="wrapper">
-        <img className='hero_background_img' src='src\components\herosection\imagesHeroSection\HeroBackgroud.png'></img>
+        <img className='hero_background_img' src={background}></img>
         <div className="hero_section">
            <div className="hero_content_text">
                <h4 className='hero_text_h4'>Plan your trip now</h4>
