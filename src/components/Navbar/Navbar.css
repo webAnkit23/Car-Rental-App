@@ -1,0 +1,125 @@
+.containter{
+    height:100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 999999999;
+}
+.nav_IconContainter{
+    
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NavIcon{
+   max-width: 140px;
+
+}
+
+.nav_ul{ 
+    width: 50%;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+     justify-content: center;
+    list-style-type: none;
+    
+}
+
+
+.nav_list_item .a ,a{
+    color: #010103;
+    cursor: pointer;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all .3s;
+    text-wrap: nowrap;
+    font-weight: 650;
+}
+.buttonContainer{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+}
+
+.Register_button{
+      background-color: rgb(255, 68, 0);
+    height: 45px;
+    width: 130px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+.Register_button:hover{
+    box-shadow: 1px 1px 3px rgb(255, 77, 0);
+    transition: all .3s ease-in;
+}
+.nav_list_item  :hover{
+      color:  #ff2525;
+}
+.mobileButton{
+    opacity: 0;
+}
+.bars{
+    display: none;
+    z-index: 9;
+}
+@media only screen and (max-width: 1000px) {
+    .bars{
+        border: none;
+        background: transparent;
+        display: inline;
+        position: fixed;
+        right: 5px;
+        z-index: 999999999;
+    }
+   
+    .Register_button{
+        display: none;
+    }
+   
+
+   
+    .show_nav{
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        justify-items: center;
+        top: -3%;
+        height: 110vh;
+        width: 100%;
+        gap: 3rem;
+        left: 0%;
+        transition: all .3s;
+        background-color: white;
+        background: white;
+        z-index: 999999999;
+    }
+    .hide_nav{
+        flex-direction: column;
+        position: absolute;
+        top: 0%;
+        height: 100vh;
+        width: 100%;
+        gap: 3rem;
+        left: -100%;
+        transition: all .3s;
+        z-index: 99;
+    }
+    .hide_Icon{
+        display: none;
+    }
+    .nav_iconContainter{
+        position: absolute;
+        left: 20px;
+    }
+    .container{
+        display: inline;
+    }
+}

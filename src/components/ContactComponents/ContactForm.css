@@ -1,0 +1,34 @@
+.input_box {
+    gap: 0.5rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.input_box textarea{
+    height: 200px;
+    outline: none;
+    margin-bottom: 1rem;
+    color: grey;
+    background: #ebe9e9;
+    border: none;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 800;
+}
+ .input_box label{
+    font-size: 17px;
+    font-weight: 600;
+}
+.input_box label span{
+    color: #e64628;
+}
+.input_box input{
+    outline: none;
+    margin-bottom: 1rem;
+    color: grey;
+    background: #ebe9e9;
+    border: none;
+    padding: 10px 30px;
+    height: 50px;
+    font-size: 15px;
+}

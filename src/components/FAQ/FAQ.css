@@ -1,0 +1,101 @@
+.faq_section{
+    background-color: white;
+    background-image: url('C:\Users\wwwan\OneDrive\Desktop\Car rental project\CAR RENT APP\src\components\FAQ\FAQimages\faq_car.png');
+    background-repeat: no-repeat;
+    background-position: -100px;
+    background-blend-mode: exclusion;
+}
+.faq_contents{
+    display: grid;
+}
+.faq_headings{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.faq_headings h5{
+    font-size: 25px;
+}
+
+.faq_headings h1 {
+    font-size: 45px;
+}
+
+.faq_headings p{
+    font-size: 17px;
+    color: #8e8d8d;
+    font-weight: 600;
+    max-width: 700px;
+    margin: 1.4rem;
+}
+.faq_accordion_container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.faq_accordion{
+    width: 800px;
+    position: relative;
+    max-width: 800px;
+    margin-bottom: 4rem;
+    z-index: 9999999;
+    box-shadow: 3px 3px 30px #c4bcbc;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+.question_block{
+    box-shadow: 0 10px 15px 0 rgba(114, 113, 113, 0.1);
+    display: flex;
+    flex-direction: column;
+  
+}
+.question{
+    font-size: 20px;
+    padding: 1rem 2rem;
+    transition:all .45s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.answer{
+    color: grey;
+    font-size: 17px;
+    padding: 1rem 2rem;  
+    transition: all 2s ease;
+    overflow: hidden;
+    transition:all .45s ease;
+    text-align: center;
+}
+.visible{
+    display: block;
+    transition: all 1s ease;
+}
+.hide{
+    display: none;
+    transition: all 1s ease;
+}
+.active_question{
+    background-color: #ff4d30;
+    box-shadow: 0 10px 15px 0 rgba(255,83,48,.35);
+    color: #fff;
+    transition: all .15s ease;
+}
+.faq_p{
+    transition: all 1s ease;
+}
+@media only screen and (max-width:870px){
+    .faq_accordion{
+        width: auto;
+    }
+}
+@media only screen and (max-width:550px){
+    .faq_accordion span{
+        display: none;
+    }
+}

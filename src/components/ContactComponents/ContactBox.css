@@ -1,0 +1,52 @@
+.contact_container{
+    background-position-y: center;
+    padding: 3rem;
+    background-image: url('C:\Users\wwwan\OneDrive\Desktop\Car rental project\CAR RENT APP\src\components\ContactComponents\bg-contact..png');
+}
+.contact_div{
+    padding: 2rem;
+   display: grid;
+   gap: 4rem;
+   grid-template-columns: 1fr 1fr;
+}
+.contact_text_box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.contact_text_box h1{
+    font-size: 50px;
+}
+.contact_text_box p{
+    color: grey;
+    font-size: 17px;
+    max-width: 481px;
+}
+.contact_text_box .a{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.a:hover {
+    color: rgb(246, 69, 5);
+}
+@media screen  and (max-width: 1111px){
+    .contact_div{
+       display: flex;
+       flex-direction: column;
+        text-align: center;
+    }
+    .contact_container{
+        margin-top: 5rem;
+        padding: 0px;
+    }
+    .contact_div{
+        padding: 0px;
+    }
+    .contact_text_box h1{
+        font-size: 40px;
+    }
+}

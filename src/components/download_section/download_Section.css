@@ -1,0 +1,47 @@
+.download_section{
+    background-color: #f8f8f8;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 5rem 0rem;
+    width: 100%;
+    background-image: url('C:\Users\wwwan\OneDrive\Desktop\Car rental project\CAR RENT APP\src\components\download_section\download_images\bg.png');
+}
+.download_text_area{
+    width: 600px;
+}
+.download_text_area h1{
+    font-size: 50px;
+}
+.download_text_area p{
+    font-size: 17px;
+    color: #6c6565;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.download_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding: 2rem;
+}
+@media screen  and (max-width:800px){
+    .download_text_area{
+        width: 100%;
+        text-align: center;
+    }
+    .download_section{
+        background-image: none;
+        padding: 2rem;
+    }
+}
+@media screen  and (max-width:500px){
+    .download_buttons{
+        flex-direction: column;
+    }
+    .download_text_area h1{
+        font-size: 40px;
+    }
+}

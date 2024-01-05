@@ -1,0 +1,21 @@
+:root {
+     --orange : #ff4d30;
+       --blue : #2777bd;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #ee480c; /* Change color as needed */
+  border-radius: 6px;
+}
+
+

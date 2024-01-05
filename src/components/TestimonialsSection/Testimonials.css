@@ -1,0 +1,77 @@
+.testimonials_section{
+    background: whitesmoke;
+}
+.testi_inner_container{
+    padding: 3rem;
+}
+.testi_headings{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testi_headings h5{
+    font-size: 23px;
+    font-style: italic;
+}
+.testi_headings h1{
+    font-size: 45px;
+    margin-bottom: 1rem;
+}
+.testi_headings p{
+    color: #747171;
+    font-size: 17px;
+    max-width: 600px;
+}
+.clients_reviews{
+    margin: 5rem 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.client_card{
+    z-index: 99999999;
+    padding: 3%;
+    background: white;
+    min-height: 344px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 30px #c3bebe;
+    max-width: 540px;
+    height: auto;
+    justify-content: space-between;
+}
+.client_card h4{
+    font-size: 28px;
+    text-align: center;
+    font-weight: 400;
+}
+.client_info{
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+    grid-template-rows: auto;
+}
+.img_container{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img_container img{
+   width: 100%;
+}
+.client_info span{
+    justify-self: flex-end;
+    font-size: 90px;
+    font-style: italic;
+    color: #f85003;
+}
+@media only screen and (max-width:450px){
+    .client_info{
+        grid-template-columns: 1fr 1fr;
+    }
+}

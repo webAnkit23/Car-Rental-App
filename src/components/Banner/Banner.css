@@ -1,0 +1,33 @@
+.banner_section{
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    margin: 2rem 0px;
+}
+.banner_container{
+    width: 100%;
+    color: white;
+    background-color: rgb(35, 33, 33);
+    padding: 3rem;
+    text-align: center;
+}
+.banner_container h1{
+    font-size: 300%;
+    padding: 1rem;
+}
+.banner_container h3{
+    font-size: 30px;
+    font-weight: 100;
+}
+.banner_container h3 span{
+    color: #f34809;
+}
+@media screen and (max-width:450px){   
+
+    .banner_container h1{
+        font-size: 200%;
+    }
+    .banner_container h3{
+        font-size: 20px;
+    }
+}

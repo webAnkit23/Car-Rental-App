@@ -1,0 +1,107 @@
+.booking_container{
+     margin: 0 auto!important;
+    max-width: 133rem!important;
+    
+}
+.booking_wrapper{
+    padding: 3%;
+    width: 100%;
+}
+.inside_items{
+  height: auto;
+    background-image: url('C:\Users\wwwan\OneDrive\Desktop\Car rental project\CAR RENT APP\src\components\BookingInput\imagesBookingSection\bookingbackground.png');
+    padding: 2rem;
+    position: relative;
+    width: 100%;
+    z-index: 4;
+    box-shadow: 0 10px 15px rgba(255,83,48,.55);
+}
+.booking_form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+.inside_items h4{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 1.2rem;
+}
+.select{
+    height: 40px;
+    width: 90%;
+    font-size: 15px;
+    border: 1px solid rgb(211, 207, 207);
+    margin: 10px;
+    border-radius: 3px;
+    color: grey;
+    outline: none;
+}
+.green{
+    background-color: rgb(178 242 178);
+}
+.red{
+    background-color: rgb(255 131 85);
+}
+.messege{
+   font-family: sans-serif;
+    font-size: 25px;
+    height: auto;
+    width: 100%;
+    margin-left: 1.2rem;
+    margin-top: .3rem;
+    padding: .4rem;
+    border-radius: 5px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.display_none{
+   opacity: 0;
+}
+.display_block{
+    opacity: 1;
+}
+.search_button{ 
+    height: 45px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 3px;
+    align-self: self-end;
+    background-color: #ff4d30;
+    box-shadow: 0 10px 15px rgba(255,83,48,.35);
+    color: white;
+}
+.search_button:hover{
+    box-shadow: 0 10px 15px rgba(255,83,48,.55);
+    transition: all.5s ease-in-out;
+}
+.label{
+    display: grid;
+    grid-template-columns: .1fr 1fr ;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 6px;
+    padding-left: 1.2rem;
+    text-align: left;
+    margin-top: 8%;
+}
+@media only screen and (max-width : 890px) {
+    .booking_form{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width : 690px) {
+    .booking_form{
+        grid-template-columns: 1fr;
+    }
+  
+}
+@media only screen and (max-width : 690px) {
+    .search_button{
+        width: 90%;
+    margin-top: 70px;
+    }
+}

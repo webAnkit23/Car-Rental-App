@@ -1,0 +1,38 @@
+.reservation_form_container{
+    padding: 1.2rem;
+    border-top: 1px solid grey;
+}
+.form_heading{
+    TEXT-ALIGN: LEFT;
+    font-size: 19px;
+    COLOR: var(--orange);
+    font-weight: bold;
+    font-family: monospace;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.reservation_form_container form{
+    display: flex;
+    flex-wrap: wrap;
+}
+#checkbox{
+   height: 20px;
+   width: 20px;
+}
+.checkbox_container{
+    width: 100%;
+    margin-top: 2rem;
+    text-align: left;
+    display: flex;
+    gap: 10px;
+    padding-left: 0.7rem;
+}
+.reserve_form_footer{
+    width: 100%;
+    /* background-color: grey; */
+    margin-bottom: 5rem;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    padding-right: 3rem;
+
+}

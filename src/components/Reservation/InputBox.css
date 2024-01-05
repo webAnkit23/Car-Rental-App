@@ -1,0 +1,19 @@
+.width {
+    width: 45%;
+}
+.width-100{
+    width: 92%;
+}
+@media screen and (max-width: 650px) {
+    .width{
+        width: 100%;
+    }
+}
+.width p{
+    color: #f07676;
+    font-size: 10px;
+    font-family: math;
+}
+.width span{
+    color: var(--orange);
+}

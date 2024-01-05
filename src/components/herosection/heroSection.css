@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+.hero2_container{
+    display: flex;
+    height: auto;
+    width: 100%;
+    min-height: 550px;
+}
+.wrapper{
+    height: 100%;
+    margin: 0 auto!important;
+    max-width: 133rem!important;
+    padding: 0 2.5rem
+}
+.hero_background_img{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: -1;
+    width: 60%;
+    height: 700px;
+}
+.hero_section{
+    width: 100%;
+    display: flex;
+}
+.hero_content_text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 30rem;
+    z-index: 3;
+   position: absolute;
+   left: 5%;
+}
+.hero_text_h4{
+    color: #010103;
+    font-family: Rubik,sans-serif;
+    font-size: 1.8rem;
+    margin: 0px;
+}
+.hero_text_h1{
+    color: #010103;
+    font-family: Poppins,sans-serif;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2.3rem;
+    margin-top: 1rem;
+}
+.hero_text_h1 span{
+    color: #ff4d30;
+}
+.hero_text_p1{
+    color: grey;
+    margin: 10px;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+.hero_button{
+    height: 60px;
+    width: 170px;
+    margin: 10px;
+    background-color: #ff4d30;
+    border: 2px solid #ff4d30;
+    border-radius: 0.3rem;
+    box-shadow: 0 10px 15px 0 rgba(255,83,48,.35);
+    transition: all .3s;
+}
+
+.hero_button a{
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+    font-weight: 700;
+}
+.hero_car_image{
+    margin-top: 5rem;
+    position: absolute;
+    right: 0;
+    width: 65%;
+    top: 10%;
+    max-width: 950px;
+}
+.hero_button_black{
+    background-color : black;
+    border : 2px solid black;
+    transition: all .3s;
+    border: 0px;
+    padding: 0px;
+}
+.hero_button_black :hover{
+    background: rgb(246, 245, 243);
+    color: #010103;
+    transition: all .3s;
+    
+}
+
+@media only screen and (max-width : 850px) {
+    .hero_car_image{
+        top:15%;
+    }
+} 
+@media only screen and (max-width : 800px) {
+      .hero_background_img{
+        display: none;
+      }
+      .hero_car_image{
+        display: none;
+      }
+      .wrapper{
+        height: auto;
+        width: 100%;
+      }
+      .hero_section{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .hero_content_text{
+        position: relative;
+        display: flex;
+       align-items: center;
+       text-align: center;
+       width: 100%;
+       margin-top: 1rem;
+      }
+      .hero_button_container{
+        width: 100%;
+      }
+      .hero_text_h1{
+        text-align-last: center;
+      }
+  
+}
+    
+

@@ -1,0 +1,46 @@
+.vehicle_card_container{
+    width: 350px;
+}
+.vehicle_card_container img{
+    width: 100%;
+    height: 262px;
+}
+.vehicle_info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #d8d5d5;
+}
+.v_info{
+    display: flex;
+    justify-content: space-between;
+}
+.v_info h1{
+    font-size: 30px;
+} 
+.v_info .flex{
+    display: flex;
+    gap: 20px;
+    color: rgb(144, 140, 140);
+    font-size: 20px;
+    font-weight: 600;
+}
+.flex p{
+    display: flex;
+    gap: 20px;
+    color: rgb(144, 138, 138);
+    font-size: 20px;
+    font-weight: 600;
+}
+.vehicle_button{
+    margin-top: 1rem;
+    border-top: 1px solid rgb(212, 208, 208);
+    padding-top: 10px;
+}
+@media screen and (max-width:370px) {
+    .vehicle_card_container{
+        width: auto;
+    }
+}
