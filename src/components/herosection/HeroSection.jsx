@@ -1,5 +1,5 @@
 import React from 'react'
-import './HeroSection.css'
+import './heroSection.css'
 import { FaChevronCircleRight } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 
