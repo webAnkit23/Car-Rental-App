@@ -41,7 +41,7 @@ import VehicleCard from './VehicleCard';
 export default function AllVehicles() {
   return (
     <section className='vehicles'>
-      <div className="vehicles_container" style={{display: 'flex', flexWrap : 'wrap',gap : '4rem',alignItems: 'center',justifyContent:'center', marginTop : '5rem'}}>
+      <div className="vehicles_container" style={{display: 'flex', flexWrap : 'wrap',gap : '4rem',alignItems: 'center',justifyContent:'center', marginTop : '5rem',marginBottom : '5rem'}}>
         {vehicles.map((vehicle) =>{
           return <VehicleCard key={vehicle.name} vehicle ={vehicle}></VehicleCard>
         })}
