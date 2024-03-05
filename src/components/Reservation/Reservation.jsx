@@ -17,9 +17,11 @@ export default function Reservation({form,handleshowreserve,handleReserveSuccess
     }
   }
 let img =null;
+let price =null;
      for(let i=0;i<car_data.length;i++){
     if(car_data[i].name === form.car_type){
           img =car_data[i].img;
+          price =car_data[i].price;
        }
      }
      console.log(formsuccess);
@@ -60,7 +62,7 @@ let img =null;
               </div>
             </div>
         </div>
-       <ReservationForm handleformsuccess ={handleformsuccess} img ={img} form ={form}/>
+       <ReservationForm handleformsuccess ={handleformsuccess} img ={img} price ={price} form ={form}/>
     </div>
   
   )

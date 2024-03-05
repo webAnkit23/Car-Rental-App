@@ -31,7 +31,7 @@ export default function History() {
                  <span>Drop date : <p>{person.drop_date}</p></span>
                </div>
                <div className="total_price">
-                 <span>  <FaRupeeSign size={40}     color= '#ff4d30'/><p>5000</p></span>
+                 <span>  <FaRupeeSign size={40}     color= '#ff4d30'/><p>{person.price}</p></span>
                </div>
                <span className='deleteHistory'><RxCross2 onClick={() => deleteHistory(i)} color='#ff4d30' size={40}/></span>
                <div className="clientContact">

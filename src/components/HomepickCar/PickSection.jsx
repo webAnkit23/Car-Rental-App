@@ -39,7 +39,7 @@ export default function PickSection({sectionRef}) {
                        <img src={selectedCar.img} style={isloading ? {display : 'none'} : {display : 'block'}} onLoad={() => setisLoading(false)}></img>
                       </div>
                       <div className="selected_car_data">
-                        <p className='active price'><span>{selectedCar.price}  /</span>rent per day</p>
+                        <p className='active price'>{selectedCar.price} </p>
                         {Object.entries(selectedCar).map(([key, value]) => (
                          key!=='name'&& key!=='price' && key!=='img'&& <div key={key} className='car_entity'>
                                   <span >{key}</span> 

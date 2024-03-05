@@ -28,7 +28,7 @@ function Navbar() {
          <li className='nav_list_item'><Link to='/testimonials' className='a' onClick={handleClick}>Testimonials</Link></li>
          <li className='nav_list_item'><Link to='/ourteam' className='a' onClick={handleClick}>Our Team</Link></li>
          <li className='nav_list_item'><Link to='/contact' className='a' onClick={handleClick}>Contact</Link></li> 
-         <li className='nav_list_item'><Link to ='/history' className='a'>History</Link></li>
+         <li className='nav_list_item'><Link to ='/history' className='a' onClick={handleClick}>History</Link></li>
         </ul>
 
     <div className="buttonContainter">

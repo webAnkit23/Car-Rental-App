@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './ReservationForm.css'
 import InputBox from './InputBox'
 import { useHistory } from '../../Context/HistoryContext';
-export default function ReservationForm({handleformsuccess,form,img}) {
+export default function ReservationForm({handleformsuccess,form,img,price}) {
   const [reserveForm ,setreserveForm] =useState({
     firstName : '',
     lastName  :'',
@@ -29,7 +29,7 @@ export default function ReservationForm({handleformsuccess,form,img}) {
     else{
         handleformsuccess(true);
 
-        setBookingHistory( [{...form ,...reserveForm,img:img},...bookingHistory])
+        setBookingHistory( [{...form ,...reserveForm,img:img,price:price},...bookingHistory])
       const updatedData = {};
      Object.keys(reserveForm).forEach((key) => {
       updatedData[key] = '';
