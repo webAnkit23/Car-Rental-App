@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './ReservationForm.css'
 import InputBox from './InputBox'
-export default function ReservationForm({handleformsuccess}) {
+import { useHistory } from '../../Context/HistoryContext';
+export default function ReservationForm({handleformsuccess,form,img}) {
   const [reserveForm ,setreserveForm] =useState({
     firstName : '',
     lastName  :'',
@@ -13,6 +14,7 @@ export default function ReservationForm({handleformsuccess}) {
     zipCode : '',
     checkbox : false
   });
+  const {bookingHistory ,setBookingHistory} = useHistory();
   const handleChange =(name ,value) =>{
     setreserveForm({
       ...reserveForm ,
@@ -21,17 +23,20 @@ export default function ReservationForm({handleformsuccess}) {
   }
   let handleSubmit = (e) =>{
     e.preventDefault();
-     if(reserveForm.firstName =''||reserveForm.lastName===''||reserveForm.number ===''||reserveForm.age ===''||reserveForm.email===''||reserveForm.zipCode ===''||reserveForm.address===''||reserveForm.city ===''||reserveForm.checkbox===false){
+     if(reserveForm.firstName ===''||reserveForm.lastName===''||reserveForm.number ===''||reserveForm.age ===''||reserveForm.email===''||reserveForm.zipCode ===''||reserveForm.address===''||reserveForm.city ===''||reserveForm.checkbox===false){
       handleformsuccess(false);
     }
     else{
         handleformsuccess(true);
+
+        setBookingHistory( [{...form ,...reserveForm,img:img},...bookingHistory])
       const updatedData = {};
      Object.keys(reserveForm).forEach((key) => {
       updatedData[key] = '';
      });
      updatedData[checkbox] = false;
      setreserveForm(updatedData);
+     
   } 
   }
   return (

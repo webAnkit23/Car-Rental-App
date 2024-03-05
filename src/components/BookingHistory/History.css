@@ -1,0 +1,117 @@
+.historyWrapper{
+   
+    gap: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+}
+.historyContainer>h1{
+    text-align: justify;
+    padding: 10px;
+    color: var(--orange);
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.bookingContainer{
+    padding: 0px 10px;
+    /* border: 2px solid orange; */
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0.2px 0.1px 5px var(--orange);
+    justify-content: space-evenly;
+    position: relative;
+}
+.hisImage{
+  width: 300px;
+}
+.hisImage>img{
+    width: 100%;
+    object-fit: cover;
+}
+.hisImage>p{
+    color: grey;
+    font-size: 20px;
+    font-family: math;
+}
+.clientInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: baseline;
+}
+.clientInfo>span{
+    color: grey;
+    font-size: 20px;
+    display: flex;
+    font-family: math;
+    flex: 1;
+    margin-left: 30px;
+}
+.clientInfo>span>p{
+    color: var(--orange);
+    margin-left: 5px;
+}
+.total_price>span{
+    font-size: 45px;
+    display: flex;
+    align-items: center
+}
+.total_price>span>p{
+    font-family: math;
+}
+.deleteHistory{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border-radius: 50%;
+    transition: all .3s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.deleteHistory:hover{
+    background:#e6e6e6;
+}
+.clientContact{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    font-family: math;
+    font-size: larger;
+    color: grey;
+   
+}
+.clientContact>span{
+    gap: 5px;
+    display: flex;
+}
+.clientContact>span>p{
+    color: var(--orange);
+}
+@media screen and (max-width:615px){
+    .bookingContainer{
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: flex-start;
+    }
+    .hisImage{
+        position: relative;
+        width: auto;
+        margin-top: 20px;
+    }
+    .clientContact{
+        top: 0;
+    left: 0;
+    margin-bottom: 10px;
+    }
+    .hisImage>p{
+        position: absolute;
+    bottom: 10px;
+    right: 0;
+    color: var(--orange);
+    }
+}

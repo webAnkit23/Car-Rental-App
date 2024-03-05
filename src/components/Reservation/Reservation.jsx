@@ -9,7 +9,6 @@ import car_data from '../../datas/Car_data';
 import ReservationForm from './ReservationForm';
 export default function Reservation({form,handleshowreserve,handleReserveSuccess}) {
   const [formsuccess ,setformsuccess] =useState(false);
-  const [display ,setdisplay] =useState(true);
   const handleformsuccess =(value) =>{
     setformsuccess(value);
     if(value===true){
@@ -61,7 +60,7 @@ let img =null;
               </div>
             </div>
         </div>
-       <ReservationForm handleformsuccess ={handleformsuccess}/>
+       <ReservationForm handleformsuccess ={handleformsuccess} img ={img} form ={form}/>
     </div>
   
   )

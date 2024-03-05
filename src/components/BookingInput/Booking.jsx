@@ -9,6 +9,7 @@ import { useState } from "react";
 import Reservation from "../Reservation/Reservation";
 import car_data from "../../datas/Car_data";
 import bookingbg from './imagesBookingSection/bookingbackground.png'
+import { useHistory } from "../../Context/HistoryContext";
 
 export default function Booking({sectionRef}) {
   const data ={
@@ -40,7 +41,6 @@ export default function Booking({sectionRef}) {
 
     let handleSubmit =(e) => {
       e.preventDefault();
-
       if(form.car_type==='Select your Car type'||form.pick_date==='Select Location'||form.drop_location==='Select Location'||form.pick_date===''||form.drop_date===''){
         setshowreserve(false);
         setreservesuccess(false);
@@ -49,9 +49,9 @@ export default function Booking({sectionRef}) {
       }
    else{
        setshowreserve(true);
+      
     }
     }
-
   return (
     <>
     <div className="booking_container" ref={sectionRef}>

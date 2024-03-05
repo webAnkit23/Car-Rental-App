@@ -1,17 +1,21 @@
+ const o = 'https://car-rental-ten.vercel.app/static/media/1.4ba4d772bcd6e82365e8.png'
+ import owner from './photos/owner.jpg'
+ import anupam from './photos/anupam.jpg'
+ import chandan from './photos/chandan.jpg'
  let team_info = [{
-    name : 'ANKIT SINGH',
+    name : 'Ratnesen Ojha',
     title : 'Owner',
-    image : 'https://car-rental-ten.vercel.app/static/media/1.4ba4d772bcd6e82365e8.png'
+    image : owner
 },
  {
-    name : 'Altamash Alam',
+    name : 'Anupam',
     title : 'Manager',
-    image : 'https://car-rental-ten.vercel.app/static/media/2.f41d050c1c5b9e59fc22.png'
+    image : anupam
  },
 {
-    name : 'Shivam Gond',
+    name : 'Chandan',
     title: 'Photographer',
-    image : 'https://car-rental-ten.vercel.app/static/media/3.1d499e4b69de7b9e10fb.png'
+    image : chandan
 },
  {
     name :'vishal Pal',
