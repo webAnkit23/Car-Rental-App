@@ -11,6 +11,16 @@ export default function History() {
       let updatedHistory = bookingHistory.filter((item,i) =>i!=index);
       setBookingHistory(updatedHistory);
     }
+
+    const getCarPrice =(car_type) =>{
+        let val = 35;
+        car_data.forEach((car) =>{
+                 if(car_type===car.name){
+                    val = car.price;
+                 }
+        })
+        return val;
+    }
   return (
     <>
     <Hero title={'History'}></Hero>
@@ -31,7 +41,7 @@ export default function History() {
                  <span>Drop date : <p>{person.drop_date}</p></span>
                </div>
                <div className="total_price">
-                 <span>  <FaRupeeSign size={40}     color= '#ff4d30'/><p>{person.price}</p></span>
+                 <span>  <FaRupeeSign size={40}     color= '#ff4d30'/><p>{getCarPrice(person)}</p></span>
                </div>
                <span className='deleteHistory'><RxCross2 onClick={() => deleteHistory(i)} color='#ff4d30' size={40}/></span>
                <div className="clientContact">

@@ -7,14 +7,14 @@ import './App.css'
 import { useHistory } from "./Context/HistoryContext"
 import { Suspense } from "react";
 const About = React.lazy(()=>import("./pages/About"));
-const OurTeam = React.lazy(()=>import("./pages/Testimonials"));
-const Testimonials = React.lazy(()=>import("./pages/Vehicle"));
+const OurTeam = React.lazy(()=>import("./pages/OurTeam"));
+const Testimonials = React.lazy(()=>import("./pages/Testimonials"));
 const Vehicle = React.lazy(()=>import("./pages/Vehicle"));
 const History = React.lazy(() =>import("./components/BookingHistory/History"));
 const Contact = React.lazy(()=>import("./pages/Contact"))
 function App() {
-  const {bookingHistory} = useHistory();
-  console.log(bookingHistory);
+ 
+ 
   return (
     <>
     <BrowserRouter>
