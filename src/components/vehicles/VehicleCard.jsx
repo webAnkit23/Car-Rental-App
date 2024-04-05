@@ -3,6 +3,7 @@ import './VehicleCard.css'
 import { useNavigate } from 'react-router-dom';
 import { MdStarBorder } from "react-icons/md";
 import { IoCarSport } from "react-icons/io5";
+import { BiRupee } from "react-icons/bi";
 export default function VehicleCard({vehicle}) {
     const a =[0,0,0,0,0];
     const navigate = useNavigate();
@@ -18,7 +19,7 @@ export default function VehicleCard({vehicle}) {
             <p>{a.map((i ,ind) => <MdStarBorder key={ind}/> )}</p>
             </div>
             <div className="right_v">
-            <h1>{vehicle.price}</h1>
+            <h1 className='price_car_h1'><BiRupee />{vehicle.price}</h1>
             <p>per day</p>
             </div>
            </div>

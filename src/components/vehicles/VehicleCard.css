@@ -23,20 +23,26 @@
 .v_info .flex{
     display: flex;
     gap: 20px;
-    color: rgb(144, 140, 140);
+    color: rgb(12, 1, 6);
     font-size: 20px;
     font-weight: 600;
+}
+.price_car_h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
 }
 .flex p{
     display: flex;
     gap: 20px;
-    color: rgb(144, 138, 138);
+    color: var(--orange);
     font-size: 20px;
     font-weight: 600;
 }
 .vehicle_button{
     margin-top: 1rem;
-    border-top: 1px solid rgb(212, 208, 208);
+    border-top: 1px solid rgb(17, 228, 193);
     padding-top: 10px;
 }
 @media screen and (max-width:370px) {
